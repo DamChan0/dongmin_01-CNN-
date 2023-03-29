@@ -24,7 +24,7 @@ model.layers
 # conv_weights = conv.weights[0].numpy()
 
 # # print(conv_weights)
-# print(conv_weights.mean(), conv_weights.std())
+# print(conv_weights.mean(), conv_weights.std())pip ins
 
 # plt.hist(conv_weights.reshape(-1, 1))
 # plt.xlabel('weight')
