@@ -19,8 +19,10 @@ std = np.std(X_train)
 X_train = (X_train-mean)/(std+1e-7)
 X_test = (X_test-mean)/(std+1e-7)
 
-X_train = np.reshape(X_train, (X_train.shape[0], rows, cols, 1))
-X_test = np.reshape(X_test, (X_test.shape[0], rows, cols, 1))
+################################# when image reshape too many values error is occur################################
+# X_train = np.reshape(X_train, (X_train.shape[0], rows, cols, 1))
+# X_test = np.reshape(X_test, (X_test.shape[0], rows, cols, 1))
+####################################################################################################################
 input_shape = (rows, cols, 1)
 
 y_train = np_utils.to_categorical(y_train, num_classes)
